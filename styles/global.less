@@ -980,9 +980,9 @@ body:not(.product-category-links-category-links-only){
 }
 @media screen and ( min-width: 1025px ){
 	#main{
-		width:@contentWidth;
+		width: calc(100% - @headerWidth);
 		padding-top:0;
-		margin-left:@headerWidth;
+		margin-left: @headerWidth;
 		>.wrapper{
 			// padding:@contentPadding*1.618;
 			padding:ceil(@contentPadding*1.618);
