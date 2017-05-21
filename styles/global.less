@@ -978,9 +978,11 @@ body:not(.product-category-links-category-links-only){
 		}
 	}
 }
+@largeWidth: 100% - @headerWidth;
+
 @media screen and ( min-width: 1025px ){
 	#main{
-		width: calc(100% - {@headerWidth});
+		width: ~"calc(@largeWidth)";
 		padding-top:0;
 		margin-left: @headerWidth;
 		>.wrapper{
