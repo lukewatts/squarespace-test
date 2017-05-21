@@ -978,11 +978,10 @@ body:not(.product-category-links-category-links-only){
 		}
 	}
 }
-@largeWidth: 100% - @headerWidth;
 
 @media screen and ( min-width: 1025px ){
 	#main{
-		width: calc(@{largeWidth});
+		width: ~"calc(100% - @{headerWidth})";
 		padding-top:0;
 		margin-left: @headerWidth;
 		>.wrapper{
